@@ -76,8 +76,8 @@ debug: True to visualize intermediate results (keypoints, matches, masks)
 ## Example
 
 <p float="left">
-  <img src="https://github.com/alessandrocapialbi/Book_Detection/blob/main/scene_18.jpg" width="600" />
-  <img src="https://github.com/alessandrocapialbi/Book_Detection/blob/main/scene18_bounding_boxes.png" width="600" />
+  <h1> Before detection </h1><img src="https://github.com/alessandrocapialbi/Book_Detection/blob/main/scene_18.jpg" width="400" />
+  <h1> After detection </h1><img src="https://github.com/alessandrocapialbi/Book_Detection/blob/main/scene18_bounding_boxes.png" width="400" />
 </p>
 
 ## License
