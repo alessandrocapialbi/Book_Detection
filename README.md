@@ -77,7 +77,7 @@ debug: True to visualize intermediate results (keypoints, matches, masks)
 
 <p float="left">
   <img src="https://github.com/alessandrocapialbi/Book_Detection/blob/main/scene_18.jpg" width="300" />
-  <img src="https://raw.githubusercontent.com/alessandrocapialbi/book-detection/main/scene18_bounding_boxes.png" width="300" />
+  <img src="https://github.com/alessandrocapialbi/Book_Detection/blob/main/scene18_bounding_boxes.png" width="300" />
 </p>
 
 ## License
