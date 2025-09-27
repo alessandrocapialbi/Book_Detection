@@ -18,26 +18,6 @@ This project detects multiple instances of books in scene images using **SIFT fe
 
 ---
 
-## Installation
-
-1. Clone the repository:
-
-    ```sh
-    git clone https://github.com/yourusername/book-detection.git
-    cd book-detection
-    ```
-
-2. Create a virtual environment and activate it:
-    ```sh
-    python3 -m venv venv
-    source venv/bin/activate
-    ```
-
-3. Install the required packages:
-    ```sh
-    pip install -r requirements.txt
-    ```
-
 ## Dependencies:
 
 1. OpenCV (opencv-python)
