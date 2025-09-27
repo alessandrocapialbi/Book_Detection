@@ -1,10 +1,10 @@
-# 📚 Book Detection with SIFT & FLANN
+# Book Detection with SIFT & FLANN
 
 This project detects multiple instances of books in scene images using **SIFT feature extraction**, **FLANN-based feature matching**, and **RANSAC homography**. It visualizes detected books with color-coded bounding boxes and computes internal metrics to assess detection quality.
 
 ---
 
-## 🚀 Features
+## Features
 
 - Detect multiple instances of the same book in a scene.
 - Color-coded bounding boxes per model.
@@ -18,7 +18,7 @@ This project detects multiple instances of books in scene images using **SIFT fe
 
 ---
 
-## 📦 Installation
+## Installation
 
 1. Clone the repository:
 
@@ -75,9 +75,10 @@ debug: True to visualize intermediate results (keypoints, matches, masks)
 
 ## Example
 
-Before detection: ![Scene Before](https://github.com/alessandrocapialbi/Book_Detection/blob/main/scene_18.jpg)
-
-After detection: ![Scene After](https://raw.githubusercontent.com/alessandrocapialbi/book-detection/main/scene_18_bounding_boxes.png)
+<p float="left">
+  <img src="https://github.com/alessandrocapialbi/Book_Detection/blob/main/scene_18.jpg" width="300" />
+  <img src="https://raw.githubusercontent.com/alessandrocapialbi/book-detection/main/scene_18_bounding_boxes.png" width="300" />
+</p>
 
 ## License
 
