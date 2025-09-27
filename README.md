@@ -1,107 +1,88 @@
-# Book Detection with SIFT & FLANN
+# 📚 Book Detection with SIFT & FLANN
 
-This project detects multiple instances of books in scene images using SIFT (Scale-Invariant Feature Transform) for feature extraction, FLANN-based matching for efficient feature comparison, and RANSAC homography estimation to localize each book accurately.
+This project detects multiple instances of books in scene images using **SIFT feature extraction**, **FLANN-based feature matching**, and **RANSAC homography**. It visualizes detected books with color-coded bounding boxes and computes internal metrics to assess detection quality.
 
-📝 Project Overview
+---
 
-Given a set of model images (reference images of books) and scene images (images containing multiple books), the project:
+## 🚀 Features
 
-1. Preprocesses images to improve SIFT efficiency.
+- Detect multiple instances of the same book in a scene.
+- Color-coded bounding boxes per model.
+- Iterative detection for crowded scenes.
+- Internal quality metrics:
+  - Number of good matches
+  - Inlier ratio from RANSAC
+  - Reprojection error
+  - Bounding box area and aspect ratio
+- Debug mode for visualizing keypoints, matches, and masks
 
-2. Extracts keypoints and descriptors from models and scenes using SIFT.
+---
 
-3. Matches features using FLANN with Lowe's ratio test.
+## 📦 Installation
 
-4. Estimates homography using RANSAC for each detected instance.
+1. Clone the repository:
 
-5. Draws bounding boxes around detected books, each book model assigned a distinct color.
+    ```sh
+    git clone https://github.com/yourusername/book-detection.git
+    cd book-detection
+    ```
 
-6. Provides internal metrics such as area for potential evaluation.
+2. Create a virtual environment and activate it:
+    ```sh
+    python3 -m venv venv
+    source venv/bin/activate
+    ```
 
-⚙️ Features
+3. Install the required packages:
+    ```sh
+    pip install -r requirements.txt
+    ```
 
-Detect multiple instances of the same book in a scene.
+## Dependencies:
 
-Supports color-coded bounding boxes for each model detected.
+1. OpenCV (opencv-python)
 
-Handles multiple scene images in order.
+2. NumPy
 
-Internal metrics for detection quality:
+3. Matplotlib
 
-Area
-
-Easy to extend for further evaluation or visualization.
-
-💻 Installation
-
-Clone the repository:
-
-git clone https://github.com/yourusername/book-detection.git
-cd book-detection
-
-Dependencies include:
-
-OpenCV (opencv-python)
-
-NumPy
-
-Matplotlib
-
-🏃 Usage
-
-Prepare folders:
-
-/models      # reference images of books
-/scenes      # images containing multiple books
+4. Jupyter 
 
 
-Run the detection script:
+## Usage
 
-python book_detection.py
+1. Open the notebook:
+   ```sh
+   jupyter notebook book_detection.ipynb
+   ```
+2. Execute cells sequentially.
 
+3. Provide paths for /models and /scenes folders if required.
 
 Outputs:
 
-Terminal prints of detected instances with coordinates and area.
+Number of instances for each model and bounding boxes with drawn on scene images with different colors.
 
-Visualized images with color-coded bounding boxes for each detected book.
+## Configuration
 
-🔧 Configuration
+scale_factor: scale applied during preprocessing (default 3.0)
 
-scale_factor: scaling applied during preprocessing (default 3.0).
+min_matches: minimum number of good matches for RANSAC (default 30)
 
-min_matches: minimum number of good matches required for RANSAC (default 30).
+colors: list of RGB colors for bounding boxes
 
-colors: list of RGB colors for bounding boxes per model.
+debug: True to visualize intermediate results (keypoints, matches, masks)
 
-debug: set True to visualize keypoints, matches, masks, and intermediate steps.
+## Example
+
+Before detection:
+
+After detection:
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for more details.
 
 
-📊 Metrics & Evaluation
 
-Even without ground truth, the following internal metrics are computed per detected instance:
 
-Aspect ratio / shape validation → filters invalid boxes
-
-These can be used to filter unreliable detections or to analyze detector performance statistically.
-
-🖼 Example
-
-Scene image before detection:
-
-Scene image after detection:
-
-⚡ Future Improvements
-
-Support for more models than colors with automatic cycling.
-
-Optional clustering of multiple detections per model (for very crowded scenes).
-
-Export detection results to JSON for further processing.
-
-Integration with ground truth for precision/recall evaluation.
-
-📄 License
-
-This project is licensed under the MIT License. See the LICENSE
- file for details.
