@@ -75,7 +75,7 @@ debug: True to visualize intermediate results (keypoints, matches, masks)
 
 ## Example
 
-Before detection: ![Scene Before](https://raw.githubusercontent.com/alessandrocapialbi/book-detection/main/scene1_8.jpg)
+Before detection: ![Scene Before](https://github.com/alessandrocapialbi/Book_Detection/blob/main/scene_18.jpg)
 
 After detection: ![Scene After](https://raw.githubusercontent.com/alessandrocapialbi/book-detection/main/scene_18_bounding_boxes.png)
 
