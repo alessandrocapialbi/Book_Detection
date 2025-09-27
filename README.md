@@ -28,16 +28,17 @@ This project detects multiple instances of books in scene images using **SIFT fe
 
 4. Jupyter 
 
-
 ## Usage
 
-1. Open the notebook:
+1. Put the dataset.zip file under a new folder in your named as you want. Just remember to change the path when extracting in the notebook.
+   
+2. Open the notebook:
    ```sh
    jupyter notebook book_detection.ipynb
    ```
-2. Execute cells sequentially.
+3. Execute cells sequentially.
 
-3. Provide paths for /models and /scenes folders if required.
+4. Provide paths for /models and /scenes folders if required.
 
 Outputs:
 
