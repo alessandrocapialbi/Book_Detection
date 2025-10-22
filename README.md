@@ -30,7 +30,7 @@ This project detects multiple instances of books in scene images using **SIFT fe
 
 ## Usage
 
-1. Put the dataset.zip file under a new folder in your named as you want. Just remember to change the path when extracting in the notebook.
+1. Put the dataset.zip file under a new folder in your Google Drive account, named as you want. Just remember to change the path when extracting in the notebook.
    
 2. Open the notebook:
    ```sh
